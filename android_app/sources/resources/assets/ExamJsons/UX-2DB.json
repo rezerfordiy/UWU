@@ -1,0 +1,17 @@
+{
+    "UX-2DB": {
+        "convex":{
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "bc_harmonic": "0",
+            "focus": "3",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "1"
+        }
+    }
+}

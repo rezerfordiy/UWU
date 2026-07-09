@@ -1,0 +1,68 @@
+{
+    "_comment": "type : EXAM_DEFAULT = 0, EXAM_MAN = 1, EXAM_ANIMAL, EXAM_USERS, 修改前记得使用格式化工具校对",
+    
+    "Animal":{
+        "Canine": {
+            "type": "2",
+            "zoom": "0",
+            "gain": "80",
+            "enhance": "1",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "0",
+            "index": "1"
+        },
+        "Feline": {
+            "type": "2",
+            "zoom": "0",
+            "gain": "80",
+            "enhance": "1",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "0",
+            "index": "2"
+        },
+        "Bovine": {
+            "type": "2",
+            "zoom": "3",
+            "gain": "70",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "3",
+            "index": "3"
+        },
+        "Equine": {
+            "type": "2",
+            "zoom": "3",
+            "gain": "70",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "3",
+            "index": "4"
+        },
+        "Ovine": {
+            "type": "2",
+            "zoom": "3",
+            "gain": "70",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "3",
+            "index": "5"
+        },
+        "Others": {
+            "type": "2",
+            "zoom": "2",
+            "gain": "70",
+            "enhance": "1",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "2",
+            "index": "6"
+        }
+    },
+    
+    "_end": "end"
+}

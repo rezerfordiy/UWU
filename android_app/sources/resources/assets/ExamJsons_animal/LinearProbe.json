@@ -1,0 +1,111 @@
+
+{
+    "_comment": "type : EXAM_DEFAULT = 0, EXAM_MAN = 1, EXAM_ANIMAL, EXAM_USERS, 修改前记得使用格式化工具校对",
+
+    "LinearProbe":{
+        "Canine_Mid_Large": {
+            "type": "2",
+            "zoom": "0",
+            "gain": "70",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "3",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "1"
+        },
+        "Canine_Small": {
+            "type": "2",
+            "zoom": "0",
+            "gain": "70",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "2"
+        },
+        "Feline": {
+            "type": "2",
+            "zoom": "0",
+            "gain": "70",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "3"
+        },
+        "Bovine": {
+            "type": "2",
+            "zoom": "1",
+            "gain": "70",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "4"
+        },
+        "Turtle": {
+            "type": "2",
+            "zoom": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "4"
+        },
+        "Equine": {
+            "type": "2",
+            "zoom": "0",
+            "gain": "70",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "5"
+        },
+        "Ovine": {
+            "type": "2",
+            "zoom": "1",
+            "gain": "70",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "6"
+        },
+        "Others": {
+            "type": "2",
+            "zoom": "0",
+            "gain": "70",
+            "enhance": "1",
+            "dr": "70",
+            "harmonic": "0",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "7"
+        }
+    }
+}

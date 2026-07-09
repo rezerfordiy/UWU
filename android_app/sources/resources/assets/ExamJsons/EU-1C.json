@@ -1,0 +1,19 @@
+{
+  "EU-1C":{
+    "eye": {
+      "type": "1",
+      "gain": "80",
+      "zoom":"1",
+      "enhance": "1",
+      "dr": "70",
+      "harmonic": "1",
+      "focus": "1",
+      "bc_gain" : "75",
+      "bc_WF":"3",
+      "bc_PRF":"0",
+      "bd_PRF":"0",
+      "bd_angle":"60",
+      "index": "1"
+    }
+  }
+}

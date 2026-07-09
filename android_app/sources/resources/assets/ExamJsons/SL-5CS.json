@@ -1,0 +1,19 @@
+{
+    "SL-5CS": {
+        "super": "LinearProbe",
+
+        "VesselFlow":{
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "1",
+            "bc_WF":"3",
+            "bd_PRF":"3",
+            "bd_PRF_flow":"3",
+            "probeType":"Line",
+            "index": "8"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "UX-2DA": {
+        "linear": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "3",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "3",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "1"
+        }
+    }
+}

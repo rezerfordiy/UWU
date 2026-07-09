@@ -1,0 +1,41 @@
+{
+    "SX-1CTA": {
+        "super": "PAProbe_NotLine",
+        "abdomen": {
+            "bc_simplify": "0",
+            "bc_darkPassFilter":"0"
+        },
+        "gynecology": {
+            "bc_simplify": "0",
+            "bc_darkPassFilter":"0"
+        },
+        "obstetric": {
+            "bc_simplify": "0",
+            "bc_darkPassFilter":"0"
+        },
+        "cardiac": {
+            "bc_simplify": "1",
+            "bc_darkPassFilter":"1"
+        },
+        "urology": {
+            "bc_simplify": "0",
+            "bc_darkPassFilter":"0"
+        },
+        "kidney": {
+            "bc_simplify": "0",
+            "bc_darkPassFilter":"0"
+        },
+        "lung": {
+            "bc_simplify": "0",
+            "bc_darkPassFilter":"0"
+        },
+        "Users1": {
+            "bc_simplify": "0",
+            "bc_darkPassFilter":"0"
+        },
+        "Users2": {
+            "bc_simplify": "0",
+            "bc_darkPassFilter":"0"
+        }
+    }
+}

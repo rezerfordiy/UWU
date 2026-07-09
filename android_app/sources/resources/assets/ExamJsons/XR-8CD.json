@@ -1,0 +1,20 @@
+{
+    "XR-8CD": {
+        "super": "LinearProbe",
+
+        "VesselFlow":{
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "1",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "probeType":"Line",
+            "bd_PRF_flow": "6",
+            "index": "8"
+
+        }
+    }
+}

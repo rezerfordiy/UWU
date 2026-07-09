@@ -1,0 +1,124 @@
+{
+    "_comment": "type : EXAM_DEFAULT : 0, EXAM_MAN : 1, EXAM_ANIMAL, EXAM_USERS, 修改前记得使用格式化工具校对",
+
+    "NotLinearProbe":{
+        "abdomen": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "1"
+        },
+        "gynecology": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "focus": "1",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "2"
+        },
+        "obstetric": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "focus": "1",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "3"
+        },
+        "cardiac": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "4"
+        },
+        "urology": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "focus": "1",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "5"
+        },
+        "kidney": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "focus": "1",
+            "bc_gain" : "95",
+            "bc_PRF": "0",
+            "bd_PRF": "0",
+            "bc_WF" : "2",
+            "bd_angle":"60",
+            "index": "6"
+        },
+        "lung" : {
+            "type": "1",
+            "gain": "80",
+            "zoom":"0",
+            "enhance": "0",
+            "dr": "110",
+            "harmonic": "0",
+            "focus": "1",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "compound":"0",
+            "index": "7"
+        },
+        "Users1": {
+            "type": "3",
+            "gain": "80",
+            "enhance": "0",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "index": "99"
+        },
+        "Users2": {
+            "type": "3",
+            "gain": "80",
+            "enhance": "0",
+            "dr": "50",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "index": "100"
+        }
+    },
+
+    "TEST":{
+        "super":"LinearProbe",
+
+        "thyroid": {
+            "gain_N" : "81"
+        }
+    },
+    
+    "_end": "end"
+}

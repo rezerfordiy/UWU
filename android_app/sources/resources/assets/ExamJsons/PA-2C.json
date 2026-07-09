@@ -1,0 +1,72 @@
+{
+    "PA-2C": {
+        "cardiac": {
+            "type": "1",
+            "gain": "80",
+            "zoom": "3",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic_N": "1",
+            "harmonic": "1",
+            "focus": "2",
+            "acousticalPower": "0",
+            "bc_simplify": "1",
+            "bc_darkPassFilter":"1",
+            "bc_WF": "10",
+            "bc_PRF_N": "3",
+            "bc_PRF": "3",
+            "bc_gain" : "75",
+            "bd_angle": "60",
+            "bd_PRF": "3",
+            "index":"0"
+        },
+        "abdomen":{
+            "type": "1",
+            "gain": "80",
+            "zoom": "1",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic_N": "1",
+            "harmonic": "1",
+            "focus": "2",
+            "acousticalPower": "1",
+            "bc_simplify": "0",
+            "bc_darkPassFilter":"0",
+            "bc_WF": "3",
+            "bc_PRF_N": "0",
+            "bc_PRF": "0",
+            "bc_gain" : "75",
+            "bd_angle": "60",
+            "bd_PRF": "0",
+            "index":"1"
+        },
+        "Users1": {
+            "type": "1",
+            "gain": "80",
+            "zoom": "3",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_WF": "10",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "bd_PRF": "3",
+            "index": "99"
+        },
+        "Users2": {
+            "type": "1",
+            "gain": "80",
+            "zoom": "3",
+            "enhance": "2",
+            "dr": "80",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_WF": "10",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "bd_PRF": "3",
+            "index": "100"
+        }
+    }
+}

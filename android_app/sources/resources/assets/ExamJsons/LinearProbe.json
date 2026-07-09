@@ -1,0 +1,132 @@
+
+{
+
+    "LinearProbe":{
+        "thyroid": {
+            "type": "1",
+            "gain": "51",
+            "enhance": "3",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "3",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bc_PRF":"0",
+            "bd_PRF":"0",
+            "bd_angle":"60",
+            "index": "1"
+        },
+        "smallParts": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "1",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "2"
+        },
+        "pediatrics": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "1",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "3"
+        },
+        "vascular": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "4"
+        },
+        "carotid": {
+            "type": "1",
+            "gain": "59",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_darkPassFilter_Gate":"80",
+            "bc_gain" : "75",
+            "bc_PRF":"3",
+            "bd_PRF":"3",
+            "bd_angle":"60",
+            "ENH_VGAIN_2": "25",
+            "ENH_VGAIN_3": "75",
+            "index": "5"
+        },
+        "breast": {
+            "type": "1",
+            "gain": "80",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "1",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bd_angle":"60",
+            "index": "6"
+        },
+        "msk": {
+            "type": "1",
+            "gain": "66",
+            "enhance": "2",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bc_PRF":"1",
+            "bd_PRF":"1",
+            "bd_angle":"60",
+            "index": "7"
+        },
+        "nerve": {
+            "type": "1",
+            "gain": "48",
+            "enhance": "2",
+            "dr": "40",
+            "harmonic": "1",
+            "focus": "0",
+            "bc_gain" : "75",
+            "bc_WF":"3",
+            "bc_PRF":"1",
+            "bd_PRF":"1",
+            "bd_angle":"60",
+            "index": "8"
+        },
+        "Users1": {
+            "type": "3",
+            "gain": "80",
+            "enhance": "0",
+            "dr": "70",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "index": "99"
+        },
+        "Users2": {
+            "type": "3",
+            "gain": "80",
+            "enhance": "0",
+            "dr": "50",
+            "harmonic": "1",
+            "focus": "2",
+            "bc_gain" : "75",
+            "index": "100"
+        }
+    }
+}

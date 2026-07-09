@@ -1,0 +1,27 @@
+{
+    "UL-1C":{
+        "super":"LinearProbe",
+
+        "Canine_Mid_Large": {
+            "zoom": "1"
+        },
+        "Canine_Small": {
+            "zoom": "1"
+        },
+        "Feline": {
+            "zoom": "1"
+        },
+        "Bovine": {
+            "zoom": "1"
+        },
+        "Equine": {
+            "zoom": "1"
+        },
+        "Ovine": {
+            "zoom": "1"
+        },
+        "Others": {
+            "zoom": "1"
+        }
+    }
+}

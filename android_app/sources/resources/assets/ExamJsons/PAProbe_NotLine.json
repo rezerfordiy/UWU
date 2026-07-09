@@ -1,0 +1,71 @@
+{
+    "PAProbe_NotLine":{
+        "super":"NotLinearProbe",
+        
+        "abdomen": {
+            "bc_WF": "3",
+            "bd_PRF": "0",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "enablePA":"0"
+        },
+        "gynecology": {
+            "bc_WF": "3",
+            "bd_PRF": "0",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "enablePA":"0"
+        },
+        "obstetric": {
+            "bc_WF": "3",
+            "bd_PRF": "0",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "enablePA":"0"
+        },
+        "cardiac": {
+            "bc_WF": "10",
+            "bd_PRF": "3",
+            "focus":"3",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "enablePA":"1"
+        },
+        "urology": {
+            "bc_WF": "3",
+            "bd_PRF": "0",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "enablePA":"0"
+        },
+        "kidney": {
+            "bc_WF": "2",
+            "bc_PRF": "0",
+            "bd_PRF": "0",
+            "bd_angle":"60",
+            "bc_gain" : "95",
+            "enablePA":"0"
+        },
+        "lung" : {
+            "bc_WF": "3",
+            "bd_PRF": "0",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "enablePA":"0"
+        },
+        "Users1" : {
+            "bc_WF": "3",
+            "bd_PRF": "0",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "enablePA":"0"
+        },
+        "Users2" : {
+            "bc_WF": "3",
+            "bd_PRF": "0",
+            "bc_gain" : "75",
+            "bd_angle":"60",
+            "enablePA":"0"
+        }
+    }
+}
