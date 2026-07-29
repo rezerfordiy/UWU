@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gpt answers/второй запрос.md",
+                "file": "struct/Главный менеджер устройства.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "второй запрос"
+              "title": "Главный менеджер устройства"
             }
           }
         ]
@@ -185,8 +185,14 @@
   },
   "active": "dc3354c7d113bce1",
   "lastOpenFiles": [
-    "gpt answers/первый запрос.md",
+    "struct/Зацепки.md",
+    "struct/Главный менеджер устройства.md",
+    "struct/глобальный хелпер.md",
+    "struct/image_process.md",
+    "struct/WIFI.md",
     "gpt answers/второй запрос.md",
+    "struct",
+    "gpt answers/первый запрос.md",
     "файлы",
     "Добро пожаловать.md",
     "gpt answers"
