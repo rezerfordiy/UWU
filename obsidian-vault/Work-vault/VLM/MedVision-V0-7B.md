@@ -84,6 +84,25 @@ A conversation between a User and an Assistant. The User asks a question, and th
 
 ```
 
+```python
+SYSTEM_PROMPT = (
+
+"A conversation between a User and an Assistant. The User asks a question, and the Assistant solves it. "
+
+"The Assistant first thinks through the reasoning process internally, then provides the User with the answer. "
+
+"The reasoning process and the final answer must be enclosed within <think> </think> and <answer> </answer> tags, respectively. "
+
+"For example: <think> reasoning process here </think> <answer> answer here </answer>. "
+
+"Within the <think> </think> tags, report the reasoning process for each step inside <step-k-reasoning> </step-k-reasoning> tags, "
+
+"followed by the intermediate results in <step-k-answer> </step-k-answer> tags. "
+
+"For example: <think> <step-1-reasoning> reasoning for step 1 </step-1-reasoning> <step-1-answer> intermediate result from step 1 </step-1-answer> </think>."
+
+)
+```
 ## Формат промптов и ответов для всех задач
 
 Выпущенная модель была обучена и протестирована с использованием chain-of-thought prompts, приведенными ниже. 
@@ -154,8 +173,113 @@ Follow the reasoning steps to get the final answer in the required format.
 #### Угол
 - `<task line>`: `estimate the angle of <name> in <unit>, which is the angle between 2 lines: (line 1) the line connecting <l1p1> and <l1p2>, (line 2) the line connecting <l2p1> and <l2p2>.`
 - `<reasoning steps>`: `Step 1: Identify line 1 and record the relative coordinates of its two endpoints in the format (x, y) = (relative position in width direction, relative position in height direction). Denote the endpoints as (x1_line1, y1_line1) and (x2_line1, y2_line1). Step 2: Identify line 2 and record the relative coordinates of its two endpoints in the same (x, y) format. Denote them as (x1_line2, y1_line2) and (x2_line2, y2_line2). Step 3: Given the pixel dimensions (pixel_width, pixel_height) and image size (image_width, image_height), compute the angle between the two lines using the formula: angle = arccos(|A · B| / (||A|| ||B||)), where A and B are the vectors of the two lines computed from the physical coordinates of their endpoints. A = ((x2_line1 - x1_line1) * image_width * pixel_width, (y2_line1 - y1_line1) * image_height * pixel_height) and B = ((x2_line2 - x1_line2) * image_width * pixel_width, (y2_line2 - y1_line2) * image_height * pixel_height). Denote A=(Ax, Ay) and B=(Bx, By). Then, angle = arccos(|Ax*Bx + Ay*By| / (sqrt(Ax^2 + Ay^2) * sqrt(Bx^2 + By^2))). Report the reasoning process and final answer within <think> </think> and <answer> </answer> tags, respectively. Inside <think> </think>, include reasoning and step results using <step-k-reasoning> </step-k-reasoning> and <step-k-answer> </step-k-answer> tags.`
-## Быстрый старт
-##
+# Быстрый старт
+```python
+from llama_cpp import Llama
+
+  
+
+SYSTEM_PROMPT = (
+
+"A conversation between a User and an Assistant. The User asks a question, and the Assistant solves it. "
+
+"The Assistant first thinks through the reasoning process internally, then provides the User with the answer. "
+
+"The reasoning process and the final answer must be enclosed within <think> </think> and <answer> </answer> tags, respectively. "
+
+"For example: <think> reasoning process here </think> <answer> answer here </answer>. "
+
+"Within the <think> </think> tags, report the reasoning process for each step inside <step-k-reasoning> </step-k-reasoning> tags, "
+
+"followed by the intermediate results in <step-k-answer> </step-k-answer> tags. "
+
+"For example: <think> <step-1-reasoning> reasoning for step 1 </step-1-reasoning> <step-1-answer> intermediate result from step 1 </step-1-answer> </think>."
+
+)
+
+  
+
+question = (
+
+"Task:\n"
+
+"Given the input medical image: the apical four-chamber echocardiogram, return the coordinates of the lower-left and upper-right corners of the bounding box for the left ventricular endocardium.\n"
+
+"Format requirement:\n"
+
+"The reasoning process and the final answer must be enclosed within <think> </think> and <answer> </answer> tags, respectively. "
+
+"For example: <think> reasoning process here </think> <answer> answer here </answer>. "
+
+"The answer should be four decimal numbers separated by commas without any units or additional text. "
+
+"The first two numbers are the coordinates of the lower-left corner and the last two numbers are the coordinates of the upper-right corner of the bounding box. "
+
+"Use relative coordinates in the image space, where the origin is at the lower-left corner of the image. "
+
+"Relative coordinates should be values between 0 and 1, representing the relative positions in the image.\n"
+
+"Reasoning steps:\n"
+
+"Step 1: Identify the relative coordinates of the bounding box. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. "
+
+"Report the reasoning process and final answer within <think> </think> and <answer> </answer> tags, respectively. "
+
+"Inside <think> </think>, include reasoning and step results using <step-k-reasoning> </step-k-reasoning> and <step-k-answer> </step-k-answer> tags.\n"
+
+"Follow the reasoning steps to get the final answer in the required format."
+
+)
+
+  
+
+llm = Llama(
+
+model_path="models/mradermacher/MedVision-V0-7B.Q4_K_M.gguf",
+
+mmproj_path="models/mradermacher/MedVision-V0-7B.mmproj-Q8_0.gguf",
+
+n_gpu_layers=0,
+
+n_ctx=2048,
+
+n_batch=128,
+
+verbose=False
+
+)
+
+  
+
+response = llm.create_chat_completion(
+
+messages = [
+
+{ "role": "system", "content": SYSTEM_PROMPT },
+
+{ "role": "user", "content": [
+
+{"type": "text", "text": question},
+
+{"type": "image_url", "image_url": {"url": "./heart.jpeg"}}
+
+]}
+
+]
+
+)
+
+  
+
+print(response)
+```
+
+![[heart.jpeg]]
+```text
+<answer> 0.392,0.458,0.625,0.617</answer>'
+```
+
+
 #
 
 #
