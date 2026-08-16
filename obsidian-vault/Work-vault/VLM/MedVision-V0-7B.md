@@ -273,12 +273,12 @@ messages = [
 
 print(response)
 ```
+![[heart.jpg]]
 
-![[heart.jpeg]]
 ```text
 <answer> 0.392,0.458,0.625,0.617</answer>'
 ```
-
+![[heart_answer.jpeg]]
 
 #
 
